@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Empresarial - Calculadoras</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+        .icon-box {
+            font-size: 3.5rem;
+            animation: float 3s ease-in-out infinite;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="min-h-screen flex items-center justify-center p-4">
+            <div class="w-full max-w-6xl">
+                <!-- Header -->
+                <div class="text-center mb-16">
+                    <h1 class="text-5xl md:text-6xl font-bold text-white mb-4">
+                        Sistema Empresarial
+                    </h1>
+                    <p class="text-xl text-purple-100 mb-2">Calculadoras Inteligentes</p>
+                    <div class="h-1 w-24 bg-white mx-auto rounded-full"></div>
+                </div>
+
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+                    <!-- Exercício 1 -->
+                    <a href="./Exercício 1/index.html" class="card-hover">
+                        <div class="bg-white rounded-2xl p-8 h-full shadow-lg cursor-pointer">
+                            <div class="icon-box mb-4">⏰</div>
+                            <h2 class="text-2xl font-bold text-gray-800 mb-3">Horas Extras</h2>
+                            <p class="text-gray-600 mb-6">
+                                Calcule o valor das horas extras trabalhadas, considerando diferenças entre dias normais e finais de semana.
+                            </p>
+                            <div class="inline-block bg-gradient-to-r from-purple-500 to-purple-600 text-white px-6 py-2 rounded-full font-semibold hover:from-purple-600 hover:to-purple-700 transition">
+                                Acessar →
+                            </div>
+                        </div>
+                    </a>
+
+                    
+                    <a href="./Exercício 2/index.html" class="card-hover">
+                        <div class="bg-white rounded-2xl p-8 h-full shadow-lg cursor-pointer">
+                            <div class="icon-box mb-4">📈</div>
+                            <h2 class="text-2xl font-bold text-gray-800 mb-3">Aumento Salarial</h2>
+                            <p class="text-gray-600 mb-6">
+                                Descubra o percentual de aumento e o novo salário conforme a faixa salarial do funcionário.
+                            </p>
+                            <div class="inline-block bg-gradient-to-r from-blue-500 to-blue-600 text-white px-6 py-2 rounded-full font-semibold hover:from-blue-600 hover:to-blue-700 transition">
+                                Acessar →
+                            </div>
+                        </div>
+                    </a>
+
+                    
+                    <a href="./Exercício 3/index.html" class="card-hover">
+                        <div class="bg-white rounded-2xl p-8 h-full shadow-lg cursor-pointer">
+                            <div class="icon-box mb-4">🚌</div>
+                            <h2 class="text-2xl font-bold text-gray-800 mb-3">Transporte Fretado</h2>
+                            <p class="text-gray-600 mb-6">
+                                Calcule o custo total do transporte fretado com base na quantidade de funcionários e dias úteis.
+                            </p>
+                            <div class="inline-block bg-gradient-to-r from-green-500 to-green-600 text-white px-6 py-2 rounded-full font-semibold hover:from-green-600 hover:to-green-700 transition">
+                                Acessar →
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                
+                
+            </div>
+        </div>
+    </main>
+</body>
+</html>
