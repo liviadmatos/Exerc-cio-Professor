@@ -31,3 +31,24 @@ function calcular(){
                 currency: "BRL"
             })
         }
+
+function atualizarRelogio() {
+    const agora = new Date();
+    
+    // Obtém horas, minutos e segundos
+    const horas = String(agora.getHours()).padStart(2, '0');
+    const minutos = String(agora.getMinutes()).padStart(2, '0');
+    const segundos = String(agora.getSeconds()).padStart(2, '0');
+    
+    // Monta a string no formato HH:MM:SS
+    const horaFormatada = `${horas}:${minutos}:${segundos}`;
+    
+    // Joga o resultado dentro da div com id="relogio"
+    document.getElementById('relogio').textContent = horaFormatada;
+}
+
+// Executa a função a cada 1000 milissegundos (1 segundo)
+setInterval(atualizarRelogio, 1000);
+
+// Chama a função uma vez logo de cara para não esperar 1s pelo primeiro ciclo
+atualizarRelogio();
